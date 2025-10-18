@@ -6,3 +6,4 @@ python-dotenv
 pymongo
 plotly
 google-generativeai
+bcrypt
