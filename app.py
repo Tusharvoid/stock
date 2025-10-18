@@ -17,6 +17,18 @@ from auth_service import auth_service
 from database_service import db_service
 from chat_interface import render_chat_interface
 from theme import get_theme_css
+try:
+    # If embedded defaults are provided, apply them
+    from secrets_config import apply_to_env
+    apply_to_env()
+except Exception:
+    pass
+
+# Note: We intentionally do NOT copy Streamlit Cloud secrets into os.environ
+# here. The application uses `secrets_config.apply_to_env()` for embedded
+# defaults and environment variables are the authoritative source. This
+# avoids automatic "brute-force" copying of remote secrets into the
+# local environment and removes Cloud-specific secret handling.
 
 # Load environment variables
 load_dotenv()

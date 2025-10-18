@@ -6,6 +6,12 @@ import json
 from dotenv import load_dotenv
 
 load_dotenv()
+try:
+    # Apply embedded defaults if present
+    from secrets_config import apply_to_env
+    apply_to_env()
+except Exception:
+    pass
 
 class GeminiAIService:
     def __init__(self):

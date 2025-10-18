@@ -5,6 +5,12 @@ from pymongo.errors import ConnectionFailure, DuplicateKeyError
 from datetime import datetime
 import streamlit as st
 from typing import Optional, Dict, List, Any
+try:
+    # Apply embedded defaults if present
+    from secrets_config import apply_to_env
+    apply_to_env()
+except Exception:
+    pass
 
 
 class DatabaseService:
