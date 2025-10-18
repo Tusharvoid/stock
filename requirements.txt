@@ -4,3 +4,5 @@ pandas
 requests
 python-dotenv
 pymongo
+plotly
+google-generativeai
