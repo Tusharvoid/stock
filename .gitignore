@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.env.*
+.venv/
+venv/
+.Python
+
+# Virtualenv
+.venv/
+venv/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependency caches
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Logs
+*.log
+
+# Misc
+node_modules/
+coverage/
+
+# Local env
+.env
+
+# Secrets
+secrets.json
