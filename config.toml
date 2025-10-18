@@ -1,0 +1,25 @@
+# Streamlit configuration file for deployment (config.toml)
+# Place this in the .streamlit/ directory of your project root
+# For more options, see: https://docs.streamlit.io/library/advanced-features/configuration
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+# Environment variables for your app (set these in Streamlit Cloud UI, not in TOML)
+# The following are for reference only. Do NOT paste secrets directly in this file for public repos!
+# Set these in the Streamlit Cloud "Secrets" or "Environment Variables" section:
+#
+# ALPHA_VANTAGE_API_KEY = "your_alpha_vantage_api_key"
+# SMTP_SERVER = "smtp.gmail.com"
+# SMTP_PORT = "587"
+# SENDER_EMAIL = "your_email@gmail.com"
+# SENDER_PASSWORD = "your_app_password"
+# RECIPIENT_EMAIL = "your_email@gmail.com"
+# GOOGLE_API_KEY = "your_google_gemini_api_key"
+# MONGODB_URI = "your_mongodb_atlas_uri"
+# DATABASE_NAME = "stock_tracker"
+# APP_TITLE = "Advanced Stock Portfolio Tracker"
+# DEFAULT_PERIOD = "1mo"
